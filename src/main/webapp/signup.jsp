@@ -11,7 +11,7 @@
 <div class="bg-image"></div>
 
 <div class="bg-text">
-<form action="/sign">
+<form action="sign">
 	<input type="text" placeholder=" Full Name" name="name"><br><br>
   <input type="email" name="email" placeholder=" Email Address"><br><br>
   <input type="number" name="phone" placeholder=" Contact Number"><br><br>
