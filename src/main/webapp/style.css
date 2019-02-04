@@ -9,8 +9,8 @@ body, html {
 }
 .bg-image {
   background-image: url("friends.jpg");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
