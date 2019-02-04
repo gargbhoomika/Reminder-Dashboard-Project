@@ -1,0 +1,67 @@
+@CHARSET "ISO-8859-1";
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+.bg-image {
+  background-image: url("friends.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+input
+{
+	height: 50px;
+	width:70%;
+	border-radius: 20px;
+	font-size:110%;
+}
+
+#submit
+{
+	background-color: black;
+	color:white;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+#submit:hover
+{
+	transform: scale(1.05);
+}
+
+a
+{
+	color:black;
+	font-size: 110%;
+	 text-decoration-line: none;
+}
+
+a:hover
+{
+	text-decoration-line: underline;
+	
+}
