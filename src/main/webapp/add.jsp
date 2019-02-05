@@ -12,7 +12,7 @@
 
 <div class="bg-text">
 <form action="add">
-Enter reminder time: <input type="text" name="time"><br><br>
+Enter reminder time: <input type="number" name="time"><br><br>
 Enter reminder date: <input type="date" name="date"><br><br>
 Enter Label: &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
 <input type="text" name="label"><br><br>
