@@ -1,4 +1,4 @@
-package add.reminder;
+package delete.reminder;
 import java.io.IOException;
 
 import javax.servlet.annotation.WebServlet;
@@ -6,28 +6,24 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import delete.reminder.dao.deletedao;
 
-import add.reminder.dao.adddao;
-@WebServlet("/add")
-public class add extends HttpServlet {
-	
+@WebServlet("/del")
+
+public class delete extends HttpServlet 
+{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException
 	{
-		int time = Integer.parseInt(request.getParameter("time"));
-		String date = request.getParameter("date");
-		String label = request.getParameter("label");
 		HttpSession session = request.getSession();
 		String email = session.getAttribute("email").toString();
-		adddao dao = new adddao();
-		
-		if(dao.fill(email,time,date,label))
+		int time = Integer.parseInt(request.getParameter("time"));
+		String date = request.getParameter("date");
+		deletedao dao = new deletedao();
+		System.out.println("Entered delete.java");
+		if(dao.delete(email, time, date))
 		{
-			session.setAttribute("time",time);
-			session.setAttribute("date",date);
-			session.setAttribute("label",label);
+			System.out.println("ENtered dao delete true");
 			response.sendRedirect("showreminder.jsp");
 		}
-		
 	}
-
 }

@@ -8,7 +8,7 @@
 <title>Reminders</title>
 </head>
 <body>
-<% String email = request.getAttribute("email").toString();
+<% String email = session.getAttribute("email").toString();
 session.setAttribute("email",email);
 %>
 <div class="bg-image"></div>

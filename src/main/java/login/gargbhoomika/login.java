@@ -15,9 +15,11 @@ public class login extends HttpServlet {
 	{
 		String email = request.getParameter("email");
 		String pass = request.getParameter("pass");
+		System.out.println("Login java entered");
 		logindao dao = new logindao();
 		if(dao.check(email,pass))
 		{
+			System.out.println("Entered Dao Condition");
 			HttpSession session = request.getSession();
 			session.setAttribute("email",email);
 			session.setAttribute("pass", pass);

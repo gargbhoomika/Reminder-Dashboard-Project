@@ -10,7 +10,7 @@
 <div class="bg-image"></div>
 
 <div class="bg-text">
-<form action="/login">
+<form action="login">
   <input type="email" name="email" placeholder=" Email Address"><br><br>
   <input type="password" name="pass" placeholder=" Password"><br><br>
   <input type="submit" value="Login" id="submit"><br><br>

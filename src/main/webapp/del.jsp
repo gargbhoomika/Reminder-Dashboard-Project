@@ -5,7 +5,7 @@
 <head>
 <link href="style.css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Add Reminder</title>
+<title>Delete Reminder</title>
 </head>
 <body>
 <div class="bg-image"></div>
